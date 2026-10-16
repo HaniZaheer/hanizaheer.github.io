@@ -130,3 +130,10 @@ p { margin: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+
+/* Recent News on home */
+.news { display: flex; flex-direction: column; gap: 0.9rem; margin-top: 1.5rem; }
+.news ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.6rem; }
+.news li { display: grid; grid-template-columns: 5.5rem minmax(0, 1fr); gap: 1rem; align-items: baseline; max-width: 65ch; }
+.news li .when { white-space: nowrap; }
+@media (max-width: 30rem) { .news li { grid-template-columns: 1fr; gap: 0.1rem; } }
